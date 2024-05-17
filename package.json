@@ -1,0 +1,14 @@
+{
+  "name": "elm-itv-benchmark",
+  "version": "1.0.0",
+  "description": "Benchmarks for Elm",
+  "main": "index.ts",
+  "scripts": {
+    "elm": "promptfoo eval -c ./BENCH__efficient_language_models/promptfooconfig.yaml -t ./BENCH__efficient_language_models/tests.yaml -p ./BENCH__efficient_language_models/prompt.txt",
+    "view": "promptfoo view"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "promptfoo": "^0.58.1"
+  }
+}
