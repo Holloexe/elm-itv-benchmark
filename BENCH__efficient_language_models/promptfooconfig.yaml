@@ -1,26 +1,26 @@
-description: "ELM ITV Benchmarks (Efficient Language Models - Is It Viable?)"
-providers: 
-
+description: 'ELM ITV Benchmarks (Efficient Language Models - Is It Viable?)'
+providers:
   # Control CLOUD LLMs
   - id: openai:gpt-3.5-turbo-1106
+  - id: openai:gpt-4o
 
   # Experimental Local ELMs
   - id: ollama:chat:llama3
     config:
-      modelName: "llama3"
+      modelName: 'llama3'
       stream: false
       temperature: 0.2
   - id: ollama:chat:phi3
     config:
-      modelName: "phi3"
+      modelName: 'phi3'
       stream: false
       temperature: 0.2
   - id: ollama:chat:gemma
     config:
-      modelName: "gemma"
+      modelName: 'gemma'
       stream: false
       temperature: 0.2
-  
+
   # IF YOUR COMPUTER CAN HANDLE IT
   # - id: ollama:chat:llama3:70b
   #   config:
@@ -29,7 +29,7 @@ providers:
   #     temperature: 0.2
 
   # --------------------------------------------------
-  
+
   # Experimental Local ELMs (with tokens information)
   # Use this to get the token usage information
   # - id: ../custom_models/ollamaModelBase.js
@@ -47,7 +47,7 @@ providers:
   #     modelName: "gemma"
   #     stream: false
   #     temperature: 0.2
-  # IF YOUR COMPUTER CAN HANDLE IT 
+  # IF YOUR COMPUTER CAN HANDLE IT
   # - id: ../custom_models/ollamaModelBase.js
   #   config:
   #     modelName: "llama3:70b"
